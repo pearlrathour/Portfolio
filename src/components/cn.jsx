@@ -7,7 +7,7 @@ function handleSubmit(e){
   }, 3000);
 }
 
-const Contact = () => {
+const cn = () => {
   return (
     <div
       name="contact"
@@ -61,4 +61,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default cn;

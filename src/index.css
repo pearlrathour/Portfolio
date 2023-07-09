@@ -15,6 +15,10 @@
   min-height: 100vh;
 }
 
+/* .home, .about{
+  background: linear-gradient(#071624 30%, #162b3e 90%);
+} */
+
 body {
   background: rgb(31, 41, 55);
 }
@@ -53,8 +57,7 @@ body {
 .experience {
   margin-top: 12%;
 }
-
-
+  
 .nav-links {
   text-underline-offset: 1rem;
 }
