@@ -117,3 +117,17 @@ body {
   }
 
 }
+
+
+.hover\:glow:hover {
+  animation: glow-animation 1s both;
+}
+
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 5px #fff;
+  }
+  100% {
+    box-shadow: 0 0 20px #fff;
+  }
+}

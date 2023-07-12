@@ -12,7 +12,7 @@ import node from "../assets/node.png";
 import express from "../assets/express.png"
 import mongodb from "../assets/mongodb.png"
 import redux from "../assets/redux.png"
-const Experience = () => {
+const Ex = () => {
   const techs = [
     {
       id: 1,
@@ -117,4 +117,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Ex;

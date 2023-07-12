@@ -19,8 +19,8 @@ export default function Navbar() {
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-2 text-base font-semibold">
                                     <a href="/" className="bg-gray-700 text-white rounded-md px-3 py-2" aria-current="page">Home</a>
-                                    <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Education</a>
-                                    <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Skills</a>
+                                    <a href="/Education" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Education</a>
+                                    <a href="/Skills" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Skills</a>
                                     <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Experience</a>
                                     <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Contact</a>
 

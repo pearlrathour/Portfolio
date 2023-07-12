@@ -6,27 +6,27 @@ export default function Contact() {
         <section>
             <div className="pt-8 lg:pt-28 px-1 mx-auto max-w-screen-md">
                 <h2 className="mb-8 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Contact Me</h2>
-                
+
                 <p className="mb-8 lg:mb-10 text-center text-gray-500 dark:text-gray-300 sm:text-base">
                     <div>Please provide your feedback</div>
                     <div>Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.</div>
                 </p>
 
                 <div className='flex justify-center'>
-                    <form action="#" className="space-y-8 w-2/3">
+                    <form action="https://formspree.io/f/xjvqvozp" method="POST" className="space-y-8 w-2/3">
                         <div>
                             {/* <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 rounded-lg border border-gray-300">c</label> */}
-                            <input type="text" id="name" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Name" required></input>
+                            <input type="text" id="name" name="name" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your Name" required></input>
                         </div>
 
                         <div>
                             {/* <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"></label> */}
-                            <input type="email" id="email" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your email" required></input>
+                            <input type="email" id="email" name="email" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your email" required></input>
                         </div>
 
                         <div className="sm:col-span-2">
                             {/* <label for="messsage" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"></label> */}
-                            <textarea id="message" rows="5" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Message"></textarea>
+                            <textarea id="message" name="message" rows="5" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Message"></textarea>
                         </div>
 
                         <div className='flex justify-center'>
@@ -84,14 +84,14 @@ export default function Contact() {
 
             </div>
             <div className='flex justify-center py-2'>
-            <a href={resume}>
+                <a href={resume}>
                     <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
                         <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                             See My Resume
                         </span>
                     </button>
-                    </a>
-                </div>
+                </a>
+            </div>
 
         </section>
     );
