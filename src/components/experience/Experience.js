@@ -103,7 +103,7 @@ export default function Experience() {
                                 <ExperienceCard exp={exp} />
                             ))} */}
 
-                            <a href="https://gssoc.girlscript.tech/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-lg bg-red-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer h-[30pc] max-h-190 rounded-md">
+                            <a href="https://gssoc.girlscript.tech/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-lg bg-orange-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer h-[30pc] max-h-190 rounded-md">
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={GSSoC} alt="" />
                                 </div>
@@ -147,13 +147,13 @@ export default function Experience() {
                         </div>
 
                         <div className="grid grid-cols-3 gap-10 antialiased">
-                            <a href="https://www.linkedin.com/company/codesscafe/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-lg bg-red-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer h-[30pc] max-h-190 rounded-md">
+                            <a href="https://www.linkedin.com/company/codesscafe/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-lg bg-violet-200 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer h-[30pc] max-h-190 rounded-md">
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={CodessCafe} alt="" />
                                 </div>
                                 <div className="font-bold text-xl mt-8 mb-4 text-gray-800 flex justify-center">Mentee</div>
                                 <div className='flex flex-row justify-between mb-4 text-gray-800 px-4'>
-                                    <div className='font-semibold'>CodessCafe</div>
+                                    <div className='font-semibold'>Codess.Cafe</div>
                                     <div className='font-medium'>Jan 2023 - Present</div>
                                 </div>
                                 <p className="text-sm leading-relaxed text-gray-700 mt-4 px-5">
@@ -161,7 +161,7 @@ export default function Experience() {
                                 </p>
                             </a>
 
-                            <a href="https://www.linkedin.com/company/spec-nith/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-sm bg-purple-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer md:mt-20 h-[31pc] max-h-190 rounded-md">
+                            <a href="https://www.linkedin.com/company/spec-nith/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-sm bg-red-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer md:mt-20 h-[31pc] max-h-190 rounded-md">
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={SPEC} alt="" />
                                 </div>
@@ -175,7 +175,7 @@ export default function Experience() {
                                 </p>
                             </a>
 
-                            <a href="https://www.linkedin.com/company/team-vibhav/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-lg bg-red-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer h-[30pc] max-h-190 rounded-md">
+                            <a href="https://www.linkedin.com/company/team-vibhav/" className="flex flex-col shadow-lg shadow-gray-500 mx-auto max-w-lg bg-lime-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer h-[30pc] max-h-190 rounded-md">
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={Vibhav} alt="" />
                                 </div>
