@@ -204,6 +204,7 @@ body {
 .skill-bar {
   /* Your existing styles */
   width: 0;
+  min-width: 0ch;
   animation: skill-bar-animation 1s ease-in-out forwards;
 }
 
