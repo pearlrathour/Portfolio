@@ -4,7 +4,7 @@ import Skills from './Skills';
 
 export default function About() {
     return (
-        <div name="about" className="h-fit w-full">
+        <div name="about" className="h-screen w-full">
             <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-between h-5/6 px-4 md:flex-row'>
             
                 <div className="flex flex-col justify-center h-full min-w-max">
@@ -13,7 +13,7 @@ export default function About() {
                     </h2>
                     <div className="text-gray-300 text-2xl text-center pt-10 max-w-2xl">
                         <div>ECE junior at NITH</div>
-                        <div>Front-end Developer, Competetive Programmer.</div>
+                        <div>Front-end Developer, Competitive Programmer.</div>
                         <div>Always in my learning phase.</div>
                     </div>
                     <div className="text-gray-400 text-2xl text-center py-6 max-w-2xl">

@@ -83,6 +83,8 @@ export default function Skills() {
     },
   ];
 
+
+
   return (
     <div name="skills" className="w-full h-full mt-10">
       <div className="max-w-screen-xl mx-auto px-2 flex flex-row justify-center w-full h-full text-white">
@@ -99,7 +101,7 @@ export default function Skills() {
             <div key={id} className="flex items-center w-full bg-transparent">
               <img src={src} alt="" className="h-8 w-8 mx-4" />
               <div className="w-96 h-5 bg-transparent">
-                <div className="h-full bg-cyan-500" style={{width: `${level}%`} }>
+                <div className="h-full bg-cyan-400" style={{width: `${level}%`} }>
                 <div className="text-black pl-3">{level} %</div>
                   {/* {level} % */}
                 </div>

@@ -1,8 +1,10 @@
 import React from "react";
+import {Link} from 'react-scroll';
+import "../index.css";
 
 export default function Navbar() {
     return (
-        <div className="sticky top-0 backdrop-filter backdrop-blur-2xl bg-opacity-30">
+        <div className="sticky top-0 backdrop-filter backdrop-blur-2xl bg-opacity-30 z-10">
             <nav className="bg-black-800">
                 <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-16">
                     <div className="relative flex h-24 items-center justify-between">
@@ -16,13 +18,14 @@ export default function Navbar() {
                         </div>
 
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                            <div className="hidden sm:ml-6 sm:block">
+                            <div className="hidden sm:ml-6 sm:block cursor-pointer">
                                 <div className="flex space-x-2 text-base font-semibold">
-                                    <a href="/" className="bg-gray-700 text-white rounded-md px-3 py-2" aria-current="page">Home</a>
-                                    <a href="/Education" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Education</a>
-                                    <a href="/Skills" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Skills</a>
-                                    <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Experience</a>
-                                    <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white rounded-md px-3 py-2">Contact</a>
+                                    <Link to="/" className="text-gray-300 hover:bg-cyan-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'cyan' }} aria-current="page" >Home</Link>
+                                    <Link to="/About" className="text-gray-300 hover:bg-red-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'red' }}>About</Link>
+                                    <Link to="/Education" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow' }}>Education</Link>
+                                    <Link to="/Projects" className="text-gray-300 hover:bg-green-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'green' }}>Projects</Link>
+                                    <Link to="/Experience" className="text-gray-300 hover:bg-[#c13584] hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': '#c13584' }}>Experience</Link>
+                                    <Link to="/Contact" className="text-gray-300 hover:bg-sky-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'skyblue' }}>Contact</Link>
 
                                     {/* <button type="button" className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">

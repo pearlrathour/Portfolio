@@ -21,6 +21,8 @@
 
 body {
   background: rgb(31, 41, 55);
+  cursor: default;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -66,7 +68,7 @@ body {
 @media screen and (max-width: 900px) {
 
   #root {
-    background: linear-gradient(rgb(31, 41, 55) 20%, black 20%, rgb(31, 41, 55) 65%, black 25%);
+    background: linear-gradient(#071624 30%, #162b3e 90%);
     min-height: 100vh;
   }
 
@@ -118,6 +120,39 @@ body {
 
 }
 
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-wave {
+  display: inline-block;
+  animation: wave-animation 2s infinite;
+  transform-origin: 80% 80%;
+}
+
 
 .hover\:glow:hover {
   animation: glow-animation 1s both;
@@ -125,9 +160,43 @@ body {
 
 @keyframes glow-animation {
   0% {
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px var(--glow-color);
   }
   100% {
-    box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 20px var(--glow-color);
   }
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-image {
+  animation: floating 3s ease-in-out infinite;
+}
+
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 4px;
 }

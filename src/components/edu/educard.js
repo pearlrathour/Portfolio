@@ -3,7 +3,7 @@ import nith from "../../assets/nith2.png";
 import kvs from "../../assets/kvs.png";
 import "../../index.css";
 
-export default function EducationCard() {
+export default function educard() {
   return (
     <div>
 
