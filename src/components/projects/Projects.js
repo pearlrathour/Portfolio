@@ -110,11 +110,11 @@ export default function Projects() {
       <div className='relative max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className="flex flex-col justify-center h-full w-full">
 
-          <div className="flex flex-row justify-center text-4xl text-white sm:text-7xl font-bold">
+          <div className="flex flex-row justify-center text-4xl text-white sm:text-7xl font-bold pb-20">
             Projects
           </div>
 
-          <div className="grid grid-cols-3 gap-x-6 text-gray-500 text-lg max-w-full">
+          <div className="grid grid-cols-3 gap-x-0 text-gray-500 text-lg max-w-full">
             {projects.map((project) => (
               <ProjectsCard project={project} />
             ))}
