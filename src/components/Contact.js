@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="pt-8 lg:pt-28 px-1 mx-auto max-w-screen-md">
                 <h2 className="mb-8 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Contact Me</h2>
 
-                <p className="mb-8 lg:mb-10 text-center text-cyan-500 dark:text-blue-200 sm:text-base">
+                <p className="mb-8 lg:mb-10 text-center text-cyan-600 dark:text-cyan-300 sm:text-base">
                     <div>Please provide your feedback</div>
                     <div>Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.</div>
                 </p>
@@ -38,7 +38,7 @@ export default function Contact() {
 
 
 
-            <div className='flex justify-center py-10'>
+            <div className='flex justify-center py-6'>
 
                 <a href="https://www.linkedin.com/in/pearlrathour/">
                     <button type="button" class="text-white bg-[#0077b5] rounded-full p-3 inline-flex items-center text-center mr-3 my-1.5 hover:glow" style={{ '--glow-color': '#0077b5' }}>

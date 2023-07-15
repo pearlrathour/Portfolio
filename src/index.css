@@ -200,3 +200,18 @@ body {
   background-color: gray;
   border-radius: 4px;
 }
+
+.skill-bar {
+  /* Your existing styles */
+  width: 0;
+  animation: skill-bar-animation 1s ease-in-out forwards;
+}
+
+@keyframes skill-bar-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--skill-level);
+  }
+}

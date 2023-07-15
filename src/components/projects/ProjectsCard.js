@@ -3,7 +3,7 @@ import { CodeBracketIcon, LinkIcon } from '@heroicons/react/24/outline';
 
 export default function ProjectsCard(props) {
     return (
-        <div class="relative group w-96 h-96 border border-white rounded-sm overflow-hidden bg-black m-auto mt-36">
+        <div class="relative group w-96 h-[28pc] border border-white rounded-md overflow-hidden bg-black m-auto mt-36">
             <img class="object-fill w-full h-full transform duration-700 backdrop-opacity-100" src={props.project.img} />
             <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
             <div class="absolute bg-gradient-to-t from-black to-gray-500 w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0 ">

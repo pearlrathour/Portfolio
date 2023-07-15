@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import "../index.css";
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -15,6 +16,18 @@ import python from "../assets/python.png";
 import opencv from "../assets/opencv.png";
 
 export default function Skills() {
+
+  const [isAnimated, setIsAnimated] = React.useState(false);
+
+  React.useEffect(() => {
+    // Trigger the animation after a delay to allow for rendering
+    const timeoutId = setTimeout(() => {
+      setIsAnimated(true);
+    }, 5000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   const techs = [
     {
       id: 1,
@@ -101,7 +114,7 @@ export default function Skills() {
             <div key={id} className="flex items-center w-full bg-transparent">
               <img src={src} alt="" className="h-8 w-8 mx-4" />
               <div className="w-96 h-5 bg-transparent">
-                <div className="h-full bg-cyan-400" style={{width: `${level}%`} }>
+                <div className="h-full bg-cyan-400 skill-bar ${isAnimated ? 'animated' : ''}`}" style={{width: `${level}%`} }>
                 <div className="text-black pl-3">{level} %</div>
                   {/* {level} % */}
                 </div>
