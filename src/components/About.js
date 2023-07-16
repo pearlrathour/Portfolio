@@ -32,9 +32,15 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="big-screen">
+                <div className="big-screen hidden md:block">
                     <Skills />
                     {/* <img src={girl} alt="profile" className="rounded-2xl h-96 md:w-fit" /> */}
+                </div>
+
+                <div className="md:hidden">
+                    <div className="flex justify-center">
+                        <Skills />
+                    </div>
                 </div>
             </div>
         </div>

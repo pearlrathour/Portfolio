@@ -90,21 +90,21 @@ export default function Experience() {
     //     },
     //]
     return (
-        <div name="experience" className="h-full w-full my-20">
+        <div name="experience" className="h-full w-full my-[8%]">
             <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className="flex flex-col justify-center h-full w-full">
-                    <div className='flex flex-row justify-center text-6xl text-white font-bold animate-fall'>
+                    <div className='flex flex-row justify-center text-6xl text-white font-bold  my-[6%] animate-fall'>
                         Experience
                     </div>
 
-                    <div className="flex flex-col mx-auto p-10 md:py-14 px-0 md:p-20 md:px-2 w-3/4">
+                    <div className="flex flex-col mx-auto p-10 md:py-2 px-0 md:p-20 md:px-2 w-3/4">
                         
                         <div className="grid grid-cols-3 gap-10 antialiased">
                             {/* {experience.map((exp) => (
                                 <ExperienceCard exp={exp} />
                             ))} */}
 
-                            <a href="https://gssoc.girlscript.tech/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-orange-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md`}>
+                            <a href="https://gssoc.girlscript.tech/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-orange-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc]  rounded-md flex-grow`}>
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={GSSoC} alt="" />
                                 </div>
@@ -118,7 +118,7 @@ export default function Experience() {
                                 </p>
                             </a>
 
-                            <a href="https://www.linkedin.com/showcase/socialsummerofcode/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-yellow-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 h-[30pc] max-h-190 rounded-md`}>
+                            <a href="https://www.linkedin.com/showcase/socialsummerofcode/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-yellow-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 h-[30pc] max-h-190 rounded-md flex-grow`}>
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={SSoC} alt="" />
                                 </div>
@@ -132,7 +132,7 @@ export default function Experience() {
                                 </p>
                             </a>
 
-                            <a href="https://www.linkedin.com/company/hacktoberfest/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-blue-200 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md`}>
+                            <a href="https://www.linkedin.com/company/hacktoberfest/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-blue-200 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md flex-grow`}>
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={Hacktoberfest} alt="" />
                                 </div>
@@ -148,7 +148,7 @@ export default function Experience() {
                         </div>
 
                         <div className="grid grid-cols-3 gap-10 antialiased">
-                            <a href="https://www.linkedin.com/company/codesscafe/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-violet-200 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md`}>
+                            <a href="https://www.linkedin.com/company/codesscafe/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-violet-200 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md flex-grow`}>
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={CodessCafe} alt="" />
                                 </div>
@@ -162,7 +162,7 @@ export default function Experience() {
                                 </p>
                             </a>
 
-                            <a href="https://www.linkedin.com/company/spec-nith/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-sky-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 h-[30pc] max-h-190 rounded-md`}>
+                            <a href="https://www.linkedin.com/company/spec-nith/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-sky-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0 md:mt-20 h-[30pc] max-h-190 rounded-md flex-grow`}>
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={SPEC} alt="" />
                                 </div>
@@ -176,7 +176,7 @@ export default function Experience() {
                                 </p>
                             </a>
 
-                            <a href="https://www.linkedin.com/company/team-vibhav/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-green-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md`}>
+                            <a href="https://www.linkedin.com/company/team-vibhav/" className={`flex flex-col shadow-lg shadow-gray-500 mx-auto w-full bg-green-100 py-10 transform duration-500 hover:-translate-y-2 cursor-pointer mt-0  h-[30pc] max-h-190 rounded-md flex-grow`}>
                                 <div>
                                     <img className="mx-auto h-36 w-36" src={Vibhav} alt="" />
                                 </div>

@@ -45,7 +45,7 @@ export default function Skills() {
     {
       id: 4,
       src: react,
-      level: 60,
+      level: 70,
     },
     {
       id: 5,
@@ -60,12 +60,12 @@ export default function Skills() {
     {
       id: 7,
       src: nodejs,
-      level: 30,
+      level: 40,
     },
     {
       id: 8,
       src: express,
-      level: 30,
+      level: 50,
     },
     {
       id: 9,

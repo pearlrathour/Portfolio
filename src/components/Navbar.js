@@ -1,5 +1,6 @@
 import React from "react";
-import {Link} from 'react-scroll';
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from 'react-scroll';
 import "../index.css";
 
 export default function Navbar() {
@@ -9,23 +10,41 @@ export default function Navbar() {
                 <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-16">
                     <div className="relative flex h-20 items-center justify-between">
 
-                        <div className="flex items-center">
-                            <h1 className="text-3xl font-semibold text-gray-200 ml-20"><a href="/" target="_blank" rel="noreferrer">Pearl</a>
-                                <span className="text-gray-500">
+                        <div className="flex items-center ">
+                            <h1 className="text-3xl font-semibold text-gray-200 ml-20 hidden sm:inline"><a href="/" rel="noreferrer">Pearl</a>
+                                <span className="text-gray-500 hidden sm:inline">
                                     .Rathour
                                 </span>
                             </h1>
                         </div>
 
-                        <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                            <div className="hidden sm:ml-6 sm:block cursor-pointer">
+                        {/* <ul className="hidden flex flex-row-reverse">
+                            <li className="nav-links px-4 cursor-pointer text-gray-300 hover:text-cyan-400">
+                                    <Link to="home" smooth duration={500}>Home</Link>
+                            </li>
+                            <li className="nav-links px-4 cursor-pointer text-gray-300 hover:text-cyan-400">
+                                    <Link to="about" smooth duration={500}>About</Link>
+                            </li>
+                            <li className="nav-links px-4 cursor-pointer text-gray-300 hover:text-cyan-400">
+                                    <Link to="experience" smooth duration={500}>Experience</Link>
+                            </li>
+                            <li className="nav-links px-4 cursor-pointer text-gray-300 hover:text-cyan-400">
+                                    <Link to="projects" smooth duration={500}>Projects</Link>
+                            </li>
+                            <li className="nav-links px-4 cursor-pointer text-gray-300 hover:text-cyan-400">
+                                    <Link to="contact" smooth duration={500}>Contact</Link>
+                            </li>
+                        </ul> */}
+
+                        <div className="absolute inset-y-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6">
+                            <div className="sm:ml-6 sm:block cursor-pointer">
                                 <div className="flex space-x-2 text-base font-semibold">
-                                    <Link to="home" className="text-gray-300 hover:bg-cyan-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'cyan', '--glow-size': '3px'}} aria-current="page" >Home</Link>
-                                    <Link to="about" className="text-gray-300 hover:bg-red-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'red', '--glow-size': '3px'}}>About</Link>
+                                    <Link to="home" className="text-gray-300 hover:bg-cyan-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'cyan', '--glow-size': '3px' }} aria-current="page" >Home</Link>
+                                    <Link to="about" className="text-gray-300 hover:bg-red-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'red', '--glow-size': '3px' }}>About</Link>
                                     {/* <Link to="education" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow' }}>Education</Link> */}
-                                    <Link to="experience" className="text-gray-300 hover:bg-[#c13584] hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': '#c13584', '--glow-size': '3px'}}>Experience</Link>
-                                    <Link to="projects" className="text-gray-300 hover:bg-green-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'green', '--glow-size': '3px'}}>Projects</Link>
-                                    <Link to="contact" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow', '--glow-size': '3px'}}>Contact</Link>
+                                    <Link to="experience" className="text-gray-300 hover:bg-[#c13584] hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': '#c13584', '--glow-size': '3px' }}>Experience</Link>
+                                    <Link to="projects" className="text-gray-300 hover:bg-green-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'green', '--glow-size': '3px' }}>Projects</Link>
+                                    <Link to="contact" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow', '--glow-size': '3px' }}>Contact</Link>
 
                                     {/* <button type="button" className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
