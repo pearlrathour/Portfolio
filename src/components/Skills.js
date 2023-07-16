@@ -70,7 +70,7 @@ export default function Skills() {
     {
       id: 9,
       src: mongodb,
-      level: 10,
+      level: 20,
     },
     {
       id: 10,
@@ -98,7 +98,7 @@ export default function Skills() {
 
   return (
     <div name="skills" className="w-full h-full mt-10">
-      <div className="max-w-screen-xl mx-auto px-2 flex flex-row justify-center w-full h-full text-white">
+      <div className="mx-auto px-2 flex flex-row justify-center w-full h-full text-white">
 
         {/* <span className="w-2/5 mr-56">
           <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
@@ -112,8 +112,8 @@ export default function Skills() {
             <div key={id} className="flex items-center w-full bg-transparent">
               <img src={src} alt="" className="h-8 w-8 mx-4" />
               <div className="w-96 h-5 bg-transparent">
-              <div className={`h-full bg-sky-100 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
-                  <div className="text-black pl-3">{level} %</div>
+              <div className={`h-full flex items-center bg-cyan-400 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
+                  <div className="text-black pl-4">{level} %</div>
                   {/* {level} % */}
                 </div>
               </div>

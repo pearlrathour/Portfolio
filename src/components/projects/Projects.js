@@ -106,7 +106,7 @@ export default function Projects() {
   ];
 
   return (
-    <div id="projects" name="projects" className="h-full w-full my-20">
+    <div id="projects" name="projects" className="h-full w-full my-[10%]">
       <div className='relative max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className="flex flex-col justify-center h-full w-full">
         

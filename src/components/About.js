@@ -6,9 +6,9 @@ import { Link } from 'react-scroll';
 export default function About() {
     return (
         <div id="about" name="about" className="h-screen w-full">
-            <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-between h-5/6 px-4 md:flex-row'>
+            <div className='max-w-screen-xl mx-[9%] flex flex-col items-center justify-between h-full gap-[10%] md:flex-row'>
 
-                <div className="flex flex-col justify-center h-full min-w-max mt-20">
+                <div className="flex flex-col justify-center h-full mt-20">
                     <h2 className="text-4xl text-center font-bold text-white mb-6">
                         MORE ABOUT MYSELF
                     </h2>

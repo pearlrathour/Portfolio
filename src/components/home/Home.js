@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <section id="home" name="home">
             <div className="h-screen w-full">
-                <div className='w-5/6 mx-[9%] flex flex-row items-center justify-between h-screen'>
+                <div className='w-5/6 mx-[9%] flex flex-row items-center justify-between h-full'>
     
                     <div className="flex flex-col justify-center h-full">
                         <div className='text-3xl sm:text-7xl font-bold text-white mb-10'>
