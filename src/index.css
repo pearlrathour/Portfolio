@@ -15,12 +15,8 @@
   min-height: 100vh;
 }
 
-/* .home, .about{
-  background: linear-gradient(#071624 30%, #162b3e 90%);
-} */
-
 body {
-  background: rgb(31, 41, 55);
+  /* background: rgb(31, 41, 55); */
   cursor: default;
   overflow-x: hidden;
 }
@@ -68,7 +64,7 @@ body {
 @media screen and (max-width: 900px) {
 
   #root {
-    background: linear-gradient(#071624 30%, #162b3e 90%);
+    /* background: linear-gradient(#071624 30%, #162b3e 90%); */
     min-height: 100vh;
   }
 
@@ -160,10 +156,10 @@ body {
 
 @keyframes glow-animation {
   0% {
-    box-shadow: 0 0 5px var(--glow-color);
+    box-shadow: 0 0 var(--glow-size, 5px) var(--glow-color);
   }
   100% {
-    box-shadow: 0 0 20px var(--glow-color);
+    box-shadow: 0 0 calc(var(--glow-size, 5px)* 4) var(--glow-color);
   }
 }
 
@@ -173,7 +169,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
   }
   100% {
     transform: translateY(0);
@@ -181,24 +177,25 @@ body {
 }
 
 .floating-image {
-  animation: floating 3s ease-in-out infinite;
+  animation: floating 4s ease-in-out infinite;
 }
 
 
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
+  background-color: #071624; 
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
+/* ::-webkit-scrollbar-track {
+  background-color: ;
+} */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 4px;
+  background-color: rgb(176, 176, 176);
+  border-radius: 2px;
 }
 
 .skill-bar {

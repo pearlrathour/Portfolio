@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/About";
-import Education from "./components/Education/Education";
+// import Education from "./components/Education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/Contact";
 import Experience from "./components/experience/Experience"
@@ -18,9 +18,9 @@ function App() {
       <Navbar />
       <Home/>
       <About/>
-      <Education/>
-      <Projects/>
+      {/* <Education/> */}
       <Experience/>
+      <Projects/>
       <Contact/>
       {/* <Experience /> */}
       {/* <Router>

@@ -112,7 +112,7 @@ export default function Skills() {
             <div key={id} className="flex items-center w-full bg-transparent">
               <img src={src} alt="" className="h-8 w-8 mx-4" />
               <div className="w-96 h-5 bg-transparent">
-              <div className={`h-full bg-cyan-400 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
+              <div className={`h-full bg-sky-100 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
                   <div className="text-black pl-3">{level} %</div>
                   {/* {level} % */}
                 </div>

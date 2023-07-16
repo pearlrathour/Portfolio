@@ -4,12 +4,12 @@ import "../index.css";
 
 export default function Navbar() {
     return (
-        <div className="sticky top-0 backdrop-filter backdrop-blur-2xl bg-opacity-30 z-10">
+        <div id="navbar" className="sticky top-0 backdrop-filter backdrop-blur-2xl bg-opacity-30 z-10">
             <nav className="bg-black-800">
                 <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-16">
-                    <div className="relative flex h-24 items-center justify-between">
+                    <div className="relative flex h-20 items-center justify-between">
 
-                        <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div className="flex items-center">
                             <h1 className="text-3xl font-semibold text-gray-200 ml-20"><a href="/" target="_blank" rel="noreferrer">Pearl</a>
                                 <span className="text-gray-500">
                                     .Rathour
@@ -20,12 +20,12 @@ export default function Navbar() {
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             <div className="hidden sm:ml-6 sm:block cursor-pointer">
                                 <div className="flex space-x-2 text-base font-semibold">
-                                    <Link to="/" className="text-gray-300 hover:bg-cyan-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'cyan' }} aria-current="page" >Home</Link>
-                                    <Link to="/About" className="text-gray-300 hover:bg-red-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'red' }}>About</Link>
-                                    <Link to="/Education" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow' }}>Education</Link>
-                                    <Link to="/Projects" className="text-gray-300 hover:bg-green-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'green' }}>Projects</Link>
-                                    <Link to="/Experience" className="text-gray-300 hover:bg-[#c13584] hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': '#c13584' }}>Experience</Link>
-                                    <Link to="/Contact" className="text-gray-300 hover:bg-sky-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'skyblue' }}>Contact</Link>
+                                    <Link to="home" className="text-gray-300 hover:bg-cyan-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'cyan', '--glow-size': '3px'}} aria-current="page" >Home</Link>
+                                    <Link to="about" className="text-gray-300 hover:bg-red-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'red', '--glow-size': '3px'}}>About</Link>
+                                    {/* <Link to="education" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow' }}>Education</Link> */}
+                                    <Link to="experience" className="text-gray-300 hover:bg-[#c13584] hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': '#c13584', '--glow-size': '3px'}}>Experience</Link>
+                                    <Link to="projects" className="text-gray-300 hover:bg-green-500 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'green', '--glow-size': '3px'}}>Projects</Link>
+                                    <Link to="contact" className="text-gray-300 hover:bg-yellow-400 hover:text-white hover:glow rounded-md px-3 py-2" style={{ '--glow-color': 'yellow', '--glow-size': '3px'}}>Contact</Link>
 
                                     {/* <button type="button" className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">

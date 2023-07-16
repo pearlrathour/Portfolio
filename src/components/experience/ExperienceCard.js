@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ExperienceCard(props) {
     return (
-        <a href={props.exp.link} className="flex flex-col shadow-lg shadow-gray-500 bg-blue-100 mx-auto max-w-lg py-10 transform duration-500 hover:-translate-y-4 cursor-pointer max-h-190 rounded-md">
+        <a href={props.exp.link} className="flex flex-col shadow-lg shadow-gray-500 bg-blue-100 mx-auto w-1/3 py-10 transform duration-500 hover:-translate-y-4 cursor-pointer max-h-190 rounded-md">
             <div>
                 <img className="mx-auto h-36 w-36" src={props.exp.img} alt="" />
             </div>

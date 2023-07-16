@@ -3,34 +3,34 @@ import "../index.css";
 
 export default function Contact() {
     return (
-        <section>
-            <div className="pt-8 lg:pt-28 px-1 mx-auto max-w-screen-md">
-                <h2 className="mb-8 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Contact Me</h2>
+        <section id="contact" name="contact">
+            <div className="pt-8 lg:pt-28 px-auto mx-auto max-w-screen-md">
+                <div className="mb-10 text-4xl font-bold text-center text-gray-900 dark:text-white">Contact Me</div>
 
-                <p className="mb-8 lg:mb-10 text-center text-cyan-600 dark:text-cyan-300 sm:text-base">
+                <p className="mb-10 lg:mb-10 text-center text-cyan-600 dark:text-gray-300 sm:text-base">
                     <div>Please provide your feedback</div>
-                    <div>Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.</div>
+                    <div>Have a project for me? I'd love to hear from you, reach out to me via email or the form below.</div>
                 </p>
 
                 <div className='flex justify-center'>
-                    <form action="https://formspree.io/f/xjvqvozp" method="POST" className="space-y-8 w-2/3">
+                    <form action="https://formspree.io/f/xjvqvozp" method="POST" className="space-y-4 w-2/3">
                         <div>
                             {/* <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 rounded-lg border border-gray-300">c</label> */}
-                            <input type="text" id="name" name="name" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your Name" required></input>
+                            <input type="text" id="name" name="name" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-md  dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your Name" required></input>
                         </div>
 
                         <div>
                             {/* <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"></label> */}
-                            <input type="email" id="email" name="email" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your email" required></input>
+                            <input type="email" id="email" name="email" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-md  dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your email" required></input>
                         </div>
 
                         <div className="sm:col-span-2">
                             {/* <label for="messsage" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"></label> */}
-                            <textarea id="message" name="message" rows="5" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Message"></textarea>
+                            <textarea id="message" name="message" rows="5" className="block p-2.5 w-full text-sm bg-transparent border border-gray-300 text-gray-900 rounded-md dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Message"></textarea>
                         </div>
 
-                        <div className='flex justify-center'>
-                            <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg border border-gray-600 bg-primary-700 sm:w-fit hover:bg-cyan-500 hover:border-none hover:glow" style={{ '--glow-color': 'cyan'}}>Send message</button>
+                        <div className='flex justify-end'>
+                            <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-md border border-gray-600 bg-primary-700 sm:w-fit hover:bg-cyan-500 hover:border-transparent hover:glow" style={{ '--glow-color': 'cyan', '--glow-size':'2px'}}>Send message</button>
                         </div>
                     </form>
                 </div>

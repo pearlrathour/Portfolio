@@ -1,22 +1,19 @@
 import React from 'react';
-import { AcademicCapIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants';
 import nith from "../../assets/nith2.png";
 import kvs from "../../assets/kvs.png";
-import { FaGithub, FaLink } from 'react-icons/fa';
 
 
 const Education = () => {
-  return <section className='section h-full w-full mt-10 ml-6' id="work">
+  return <section id="education" name="education" className='section h-screen w-full ml-6'>
     <div className='mx-auto max-w-screen-xl'>
 
       {/* <h2 className='h2 leading-tight text-cyan-500'>My Latest <br/>Work</h2> */}
       <div className="flex flex-row justify-start pb-10">
-        <AcademicCapIcon className="h-16 w-16 mr-2 text-white mt-4" />
-        <span className="text-4xl sm:text-7xl font-bold text-white mt-4">
+        <div className="text-4xl sm:text-7xl font-bold text-white mt-4">
           Education
-        </span>
+        </div>
 
         <div className='flex flex-col'>
           <div className='flex flex-col mb-10'>
@@ -98,7 +95,7 @@ const Education = () => {
               </span>
             </div>
 
-            <a href="https://nith.ac.in/" className="flex h-28 w-28 items-center justify-center mx-2 rounded-full hover:glow" style={{ '--glow-color': 'silver'}}>
+            <a href="https://hamirpur.kvs.ac.in/" className="flex h-28 w-28 items-center justify-center mx-2 rounded-full hover:glow" style={{ '--glow-color': 'silver'}}>
               <img src={kvs} alt="kvs" />
             </a>
 

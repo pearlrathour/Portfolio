@@ -8,14 +8,10 @@ import resume from "../../assets/PearlRathour.pdf";
 export default function Home() {
     
     return (
-        <div>
-            <div name="home" className="h-screen w-full">
-                <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-between h-5/6 px-4 md:flex-row'>
-                    {/* <div className="small-screen hidden">
-                    <img src={HeroImage} alt="profile" className="rounded-2xl mx-auto w-2/3 md:w-full" />
-                </div> */}
-
-
+        <section id="home" name="home">
+            <div className="h-screen w-full">
+                <div className='w-5/6 mx-[9%] flex flex-row items-center justify-between h-screen'>
+    
                     <div className="flex flex-col justify-center h-full">
                         <div className='text-3xl sm:text-7xl font-bold text-white mb-10'>
                             Hello
@@ -83,7 +79,7 @@ export default function Home() {
                         </div>
                         <div className='justify-center py-6'>
                             <a href={resume} target="_blank" rel="noopener noreferrer">
-                                <button className="relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group hover:text-white dark:text-white hover:glow" style={{ '--glow-color': 'cyan'}}>
+                                <button className="relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group hover:text-white dark:text-white hover:glow" style={{ '--glow-color': 'cyan', '--glow-size': '3px'}}>
                                     <div className="relative px-5 py-3 rounded-md bg-cyan-500 text-gray-200 hover:text-white">
                                         See My Resume
                                     </div>
@@ -97,7 +93,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

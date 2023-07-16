@@ -90,7 +90,7 @@ export default function Projects() {
     {
       title: "Tetris",
       img: Tetris,
-      desc: "Tetris is a web-based game where Tetriminos fall from the top of the grid and stack up at the bottom. Players rotate the Tetriminos to form complete rows across the field to win. The game ends when the Tetriminos reach the top of the grid.",
+      desc: "Tetris is a web-based game where Tetriminos fall from the top of the grid and stack up at the bottom. Players complete rows across the field to win. The game ends when the Tetriminos reach the top of the grid.",
       link: "https://tetris-game-alpha.vercel.app/",
       github: "https://github.com/pearlrathour/Tetris",
       tech: [html, js, css]
@@ -106,11 +106,11 @@ export default function Projects() {
   ];
 
   return (
-    <div name="projects" className="h-full w-full my-20">
+    <div id="projects" name="projects" className="h-full w-full my-20">
       <div className='relative max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className="flex flex-col justify-center h-full w-full">
-
-          <div className="flex flex-row justify-center text-4xl text-white sm:text-7xl font-bold pb-20">
+        
+          <div className="flex justify-center text-6xl text-white font-bold pb-20 ">
             Projects
           </div>
 
