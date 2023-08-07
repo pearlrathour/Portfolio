@@ -4,7 +4,7 @@ import ProjectsCard from './ProjectsCard'
 import ParkShare from '../../assets/projects/ParkShare.png'
 import NewsApp from '../../assets/projects/NewsApp.png'
 import Textify from '../../assets/projects/Textify-dark-theme.png'
-import TicTacToe from '../../assets/projects/TicTacToe.png'
+import TicTacToe from '../../assets/projects/TicTacToe2.png'
 import ComputerVision from '../../assets/projects/ComputerVision1.png'
 import ExploringThePast from '../../assets/projects/ExploringThePast1.png'
 import CampusConnect from '../../assets/projects/CampusConnect4.png'
@@ -114,7 +114,7 @@ export default function Projects() {
             Projects
           </div>
 
-          <div className="grid grid-cols-3 gap-x-0 text-gray-500 text-lg max-w-full">
+          <div className="grid grid-cols-3 grid-rows-3 gap-x-0 text-gray-500 text-lg max-w-[90%] m-auto">
             {projects.map((project) => (
               <ProjectsCard project={project} />
             ))}

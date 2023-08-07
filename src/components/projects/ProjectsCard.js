@@ -5,7 +5,7 @@ import "../../index.css";
 export default function ProjectsCard(props) {
     return (
         <div class="relative group w-full h-full border-2 border-transparent rounded-none overflow-hidden m-auto hover:border-[0.5px] hover:border-gray-400 hover:glow" style={{ '--glow-color': 'silver', '--glow-size': '1px' }}>
-            <img class="object-cover w-full h-3/4 transform duration-700 backdrop-opacity-100" src={props.project.img} />
+            <img class="object-cover w-full h-3/4 transform duration-700 backdrop-opacity-100" src={props.project.img} alt='Project'/>
             <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-3/4 group-hover:-inset-y-0"></div>
                 <div class="absolute bg-gradient-to-b from-[#0f2c47] to-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0 ">
 

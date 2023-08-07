@@ -10,6 +10,7 @@ import tailwind from "../assets/tailwind.png";
 import nodejs from "../assets/nodejs.png";
 import express from "../assets/express.png"
 import mongodb from "../assets/mongodb.png"
+import mysql from "../assets/sql.png"
 import c from "../assets/c.png";
 import cpp from "../assets/cpp.png";
 import python from "../assets/python.png";
@@ -70,25 +71,30 @@ export default function Skills() {
     {
       id: 9,
       src: mongodb,
-      level: 20,
+      level: 40,
     },
     {
-      id: 10,
+      id:10,
+      src: mysql,
+      level: 50
+    },
+    {
+      id: 11,
       src: c,
       level: 70,
     },
     {
-      id: 11,
+      id: 12,
       src: cpp,
       level: 80,
     },
     {
-      id: 12,
+      id: 13,
       src: python,
       level: 40,
     },
     {
-      id: 13,
+      id: 14,
       src: opencv,
       level: 30,
     },
@@ -110,7 +116,7 @@ export default function Skills() {
         <span className="flex flex-col gap-3">
           {techs.map(({ id, src, level }) => (
             <div key={id} className="flex items-center w-full bg-transparent">
-              <img src={src} alt="" className="h-8 w-8 mx-4" />
+              <img src={src} alt="" className="h-7 w-7 mx-4" />
               <div className="w-96 h-5 bg-transparent">
               <div className={`h-full flex items-center bg-cyan-400 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
                   <div className="text-black pl-4">{level} %</div>
