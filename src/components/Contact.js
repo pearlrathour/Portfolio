@@ -4,10 +4,10 @@ import "../index.css";
 export default function Contact() {
     return (
         <section id="contact" name="contact">
-            <div className="pt-8 lg:pt-28 px-auto mx-auto max-w-screen-md">
+            <div className="pt-8 lg:pt-28 px-auto m-auto max-w-screen-md">
                 <div className="mb-10 text-4xl font-bold text-center text-gray-900 dark:text-white">Contact Me</div>
 
-                <p className="mb-10 lg:mb-10 text-center text-cyan-600 dark:text-gray-300 sm:text-base">
+                <p className="mb-10 lg:mb-10 text-center text-cyan-600 dark:text-gray-300">
                     <div>Please provide your feedback</div>
                     <div>Have a project for me? I'd love to hear from you, reach out to me via email or the form below.</div>
                 </p>

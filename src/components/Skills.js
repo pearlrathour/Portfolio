@@ -116,15 +116,13 @@ export default function Skills() {
         <span className="flex flex-col gap-3">
           {techs.map(({ id, src, level }) => (
             <div key={id} className="flex items-center w-full bg-transparent">
-              <img src={src} alt="" className="h-7 w-7 mx-4" />
-              <div className="w-96 h-5 bg-transparent">
-              <div className={`h-full flex items-center bg-cyan-400 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
-                  <div className="text-black pl-4">{level} %</div>
-                  {/* {level} % */}
+              <img src={src} alt="" className="h-6 w-6 mx-4" />
+              <div className="w-96 h-4 bg-transparent">
+                <div className={`h-full flex items-center bg-cyan-400 ${scroll}`} style={{ "--skill-level": `${level}%` }} >
+                    <div className="text-black text-sm pl-4">{level} %</div>
+                    {/* {level} % */}
+                     </div>
                 </div>
-              </div>
-
-
             </div>
           ))}
         </span>
