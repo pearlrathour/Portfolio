@@ -2,7 +2,7 @@ import React from 'react'
 import girl from "../../assets/girl11.png";
 import "../../index.css";
 import Type from './Type';
-import resume from "../../assets/Resume.pdf";
+import resume from "../../assets/PearlRathour.pdf";
 
 
 export default function Home() {
