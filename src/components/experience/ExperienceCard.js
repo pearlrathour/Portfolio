@@ -45,9 +45,11 @@ export default function ExperienceCard(props) {
             <motion.div ref={ref} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} style={{ transformStyle: "preserve-3d", transform, }}
                 className="relative h-96 w-72 rounded-xl border-2 border-cyan-800">
                 <div className="absolute inset-4 grid place-content-center rounded-xl bg-gradient-to-br from-cyan-400 to-slate-800 shadow-lg border-2 border-cyan-600" style={{ transform: "translateZ(75px)", transformStyle: "preserve-3d", }}>
-                    <div className="flex flex-col justify-evenly text-center text-gray-100" style={{ transform: "translateZ(50px)", }}>
-                        <img class="object-fill w-full h-56 px-4 transform duration-700 backdrop-opacity-100" src={props.exp.img} alt='Experience' />
+                    <div className="flex flex-col justify-around text-center text-gray-100" style={{ transform: "translateZ(50px)", }}>
                         <div className="py-[4%]">
+                            <img class="object-fill w-full h-40 px-3 transform duration-700 backdrop-opacity-100" src={props.exp.img} alt='Experience' />   
+                        </div>
+                        <div className="py-[8%]">
                             <div className="text-xl font-bold">{props.exp.company}</div>
                             <div className="text-sm font-thin">{props.exp.position}</div>
                             <div className="text-sm font-thin py-[1%]">{props.exp.date}</div>
